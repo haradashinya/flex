@@ -30,7 +30,6 @@ body {
     display:flex;
     align-items:left;
 
-    /*-webkit-flex-flow: row wrap;*/
 
 }
 .wrapper #main {
@@ -43,7 +42,6 @@ body {
 	height: 300px;
 	background: #ccc;
 	margin-right: 1rem;
-	text-align: center;
 }
 
 
@@ -52,7 +50,7 @@ body {
   display: -moz-box;
   display: box;
 }
-.flex div {
+.flex .wrapper {
   -webkit-box-flex: 1;
   -moz-box-flex: 1;
   -webkit-flex-flow: row wrap;
@@ -63,13 +61,21 @@ body {
 	margin-top:15px;
 	background: #ccc;
 	width: 300px;
-	text-align: center;
 }
 
-#footer {
+.header{
+  background: red;
+}
+
+footer {
+
+
+
+}
+footer p {
+  background: #ccc;
   width: 300px;
-  font-size: 30px;
-  -webkit-flex-wrap: nowrap;
-  -webkit-flex-direction: column;
-}
 
+  -webkit-flex-flow: row wrap;
+
+}
