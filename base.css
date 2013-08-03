@@ -29,7 +29,12 @@ body {
     /* fx(22+) */
     display:flex;
     align-items:left;
-	-webkit-flex-flow: row wrap;
+
+    /*-webkit-flex-flow: row wrap;*/
+
+}
+.wrapper #main {
+  width: 700px;
 
 }
 
@@ -40,18 +45,17 @@ body {
 	margin-right: 1rem;
 	text-align: center;
 }
-.wrapper > p:hover {
-}
 
 
-.box {
+.flex {
   display: -webkit-box;
   display: -moz-box;
   display: box;
 }
-.box div {
+.flex div {
   -webkit-box-flex: 1;
   -moz-box-flex: 1;
+  -webkit-flex-flow: row wrap;
   box-flex: 1;
 }
 
@@ -61,9 +65,11 @@ body {
 	width: 300px;
 	text-align: center;
 }
-#sidebar h2 {
-	background: red;
-	padding-bottom: 5px;
-}
 
+#footer {
+  width: 300px;
+  font-size: 30px;
+  -webkit-flex-wrap: nowrap;
+  -webkit-flex-direction: column;
+}
 
